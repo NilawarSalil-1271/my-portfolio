@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salil Nilawar - Resume</title>
+    <style>
+        /* Base Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Resume Container - A4 Size */
+        .resume-wrapper {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: #555;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .contact-info span::after {
+            content: "|";
+            margin-left: 12px;
+            color: #ccc;
+        }
+
+        .contact-info span:last-child::after {
+            content: "";
+            margin-left: 0;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+            margin-bottom: 12px;
+            color: #111;
+        }
+
+        /* Education & Experience Items */
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        .item-date {
+            font-size: 13px;
+            color: #555;
+            white-space: nowrap;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 5px 10px;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .skill-category {
+            font-weight: bold;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .resume-wrapper {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-wrapper">
+        
+        <!-- HEADER -->
+        <header class="header">
+            <h1>Salil Nilawar</h1>
+            <div class="contact-info">
+                <span>Bavdhan, Pune</span>
+                <span><a href="mailto:salilnilawar508@gmail.com">salilnilawar508@gmail.com</a></span>
+                <span><a href="tel:+919373885013">+91 9373885013</a></span>
+                <span><a href="https://linkedin.com/in/salil-nilawar-026782402" target="_blank">linkedin.com/in/salil-nilawar-026782402</a></span>
+                <span><a href="https://github.com/NilawarSalil-1271" target="_blank">github.com/NilawarSalil-1271</a></span>
+            </div>
+        </header>
+
+        <!-- EDUCATION -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">MIT WPU University</span>
+                    <span class="item-date">2024 &ndash; 2030</span>
+                </div>
+                <div class="item-header">
+                    <span class="item-subtitle">Computer Science Engineering</span>
+                    <span class="item-date">Pune, India</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">Frontend:</div>
+                <div>React, HTML5, CSS3, JavaScript</div>
+
+                <div class="skill-category">Backend & Languages:</div>
+                <div>Node.js, Express, Python, C++</div>
+
+                <div class="skill-category">Databases:</div>
+                <div>MongoDB, SQL</div>
+
+                <div class="skill-category">Tools & Platforms:</div>
+                <div>Git, GitHub, VS Code, Vercel</div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">StackShow | <span style="font-weight: normal;">Next.js, Node.js, Express, MongoDB</span></span>
+                    <span class="item-date"><a href="https://stackshow.vercel.app" target="_blank">Live Demo</a> | <a href="https://github.com/NilawarSalil-1271/stackshow" target="_blank">GitHub</a></span>
+                </div>
+                <ul>
+                    <li>Engineered a multi-tenant Portfolio-as-a-Service platform enabling developers to build, host, and manage dynamic, theme-based portfolios.</li>
+                    <li>Developed an interactive React dashboard with real-time preview capabilities to enhance the user experience during portfolio generation.</li>
+                    <li>Implemented Next.js middleware for seamless subdomain routing alongside a robust Node.js/Express backend secured with JWT authentication.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">RecoverFit | <span style="font-weight: normal;">HTML5, CSS3, Vanilla JavaScript</span></span>
+                    <span class="item-date"><a href="https://rest-rep.vercel.app" target="_blank">Live Demo</a> | <a href="https://github.com/NilawarSalil-1271/RestRep" target="_blank">GitHub</a></span>
+                </div>
+                <ul>
+                    <li>Built an adaptive fitness tracking web application that optimizes training by dynamically adjusting daily workouts based on current muscle soreness and readiness.</li>
+                    <li>Designed a custom algorithm to calculate a daily "Readiness Score", intelligently toggling between primary training plans and targeted recovery sessions.</li>
+                    <li>Integrated an interactive SVG visual body map, a smart rest timer, and leveraged local storage for persistent user data without requiring a traditional backend.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- EXTRACURRICULAR -->
+        <section class="section">
+            <h2 class="section-title">Extracurricular & Leadership</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">National-Level Football Player</span>
+                </div>
+                <ul>
+                    <li>Demonstrated exceptional discipline, teamwork, and resilience by competing at the national level in high-stakes environments.</li>
+                    <li>Successfully balanced rigorous athletic training schedules with demanding academic coursework in Computer Science Engineering.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
